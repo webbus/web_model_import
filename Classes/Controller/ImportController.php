@@ -42,7 +42,7 @@ class Tx_WebModelImport_Controller_ImportController extends Tx_Extbase_MVC_Contr
 	}
 
 	/**
-	 * action upload new
+	 * action upload new2
 	 *
 	 * @return void
 	 */
