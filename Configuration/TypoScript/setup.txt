@@ -1,0 +1,11 @@
+# Module configuration
+module.tx_webmodelimport {
+	persistence {
+		storagePid = {$module.tx_webmodelimport.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_webmodelimport.view.templateRootPath}
+		partialRootPath = {$module.tx_webmodelimport.view.partialRootPath}
+		layoutRootPath = {$module.tx_webmodelimport.view.layoutRootPath}
+	}
+}

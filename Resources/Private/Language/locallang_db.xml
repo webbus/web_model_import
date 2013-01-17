@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'web_model_import'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+            
+			<label index="tx_webmodelimport_domain_model_import">Import</label>
+
+			<label index="tx_webmodelimport_domain_model_address">Address</label>
+			<label index="tx_webmodelimport_domain_model_address.name">Name</label>
+			<label index="tx_webmodelimport_domain_model_address.street">Street</label>
+			<label index="tx_webmodelimport_domain_model_address.zipcode">Zipcode</label>
+			<label index="tx_webmodelimport_domain_model_address.city">City</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

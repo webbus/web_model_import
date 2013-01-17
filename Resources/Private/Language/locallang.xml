@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Import Model extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_webmodelimport_domain_model_import">Import</label>
+			<label index="tx_webmodelimport_domain_model_address">Address</label>
+			<label index="tx_webmodelimport_domain_model_address.name">name</label>
+			<label index="tx_webmodelimport_domain_model_address.street">street</label>
+			<label index="tx_webmodelimport_domain_model_address.zipcode">zipcode</label>
+			<label index="tx_webmodelimport_domain_model_address.city">city</label>
+		</languageKey>
+	</data>
+</T3locallang>
