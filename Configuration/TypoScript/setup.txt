@@ -4,8 +4,22 @@ module.tx_webmodelimport {
 		storagePid = {$module.tx_webmodelimport.persistence.storagePid}
 	}
 	view {
-		templateRootPath = {$module.tx_webmodelimport.view.templateRootPath}
-		partialRootPath = {$module.tx_webmodelimport.view.partialRootPath}
-		layoutRootPath = {$module.tx_webmodelimport.view.layoutRootPath}
+		templateRootPath = EXT:web_model_import/Resources/Private/Backend/Templates/
+		partialRootPath = EXT:web_model_import/Resources/Private/Backend/Partials/
+		layoutRootPath = EXT:web_model_import/Resources/Private/Backend/Layouts/
 	}
+	
+	settings {
+		selectedModel = Tx_WebModelImport_Domain_Model_Address
+		allowedFileTypes = csv
+		csvSeperator = ;
+		csvSkipFirstLine = 0
+		systemEncoding = {$module.tx_webmodelimport.settings.utf8}
+	}
+	
 }
+
+
+plugin.tx_webmodelimport.persistence < module.tx_webmodelimport.persistence
+
+page.includeCSS.tx_webmodelimport_frontend = EXT:web_model_import/Resources/Public/CSS/frontend.css

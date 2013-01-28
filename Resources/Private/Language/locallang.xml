@@ -6,12 +6,19 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="tx_webmodelimport_domain_model_import">Import</label>
-			<label index="tx_webmodelimport_domain_model_address">Address</label>
-			<label index="tx_webmodelimport_domain_model_address.name">name</label>
-			<label index="tx_webmodelimport_domain_model_address.street">street</label>
-			<label index="tx_webmodelimport_domain_model_address.zipcode">zipcode</label>
-			<label index="tx_webmodelimport_domain_model_address.city">city</label>
+			<label index="tx_webmodelimport_submit">Senden</label>
+			<label index="tx_webmodelimport_import_error_nofile">Es wurde keine Datei ausgewählt.</label>
+			<label index="tx_webmodelimport_import_error_wrongfiletype">Der ausgewählte Dateityp ist nicht erlaubt. Folgende Dateien können hochgeladen werden: </label>
+			<label index="tx_webmodelimport_import_error_wrongnrofcolumns">Die Datei enthält nicht die richtige Anzahl an Spalten. Richtige Spaltenzahl: </label>
+			<label index="tx_webmodelimport_import_error_lineinfo">Der Fehler trat auf in Zeile </label>
+			<label index="tx_webmodelimport_import_error_canceled">Der Import wurde abgebrochen.</label>
+			<label index="tx_webmodelimport_import_success">Der Import war erfolgreich. Anzahl neuer Datensätze: </label>
+			<label index="tx_webmodelimport_header">Import neuer Model-Datensätze</label>
+			<label index="tx_webmodelimport_import_message_file">Bitte wählen Sie eine Datei aus. Erlaubte Dateitypen: </label>
+			<label index="tx_webmodelimport_frontend_showall">Alle anzeigen</label>
+			<label index="tx_webmodelimport_frontend_filter">Filter setzen</label>
+			<label index="tx_webmodelimport_frontend_addresses">Adressenliste</label>
+			<label index="tx_webmodelimport_frontend_setfilter">Ausgewählter Filter:</label>
 		</languageKey>
 	</data>
 </T3locallang>

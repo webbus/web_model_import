@@ -1,14 +1,10 @@
 module.tx_webmodelimport {
-	view {
-		# cat=module.tx_webmodelimport/file; type=string; label=Path to template root (BE)
-		templateRootPath = EXT:web_model_import/Resources/Private/Backend/Templates/
-		# cat=module.tx_webmodelimport/file; type=string; label=Path to template partials (BE)
-		partialRootPath = EXT:web_model_import/Resources/Private/Backend/Partials/
-		# cat=module.tx_webmodelimport/file; type=string; label=Path to template layouts (BE)
-		layoutRootPath = EXT:web_model_import/Resources/Private/Backend/Layouts/
+	settings {
+		# cat=module.tx_webmodelimport//a; type=string; label=Encoding des Typo3-Systems
+		systemEncoding = utf8
 	}
 	persistence {
-		# cat=module.tx_webmodelimport//a; type=string; label=Default storage PID
+		# cat=module.tx_webmodelimport//a; type=string; label=Speicherort (PID)
 		storagePid = 
 	}
 }

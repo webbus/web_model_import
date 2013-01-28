@@ -1,0 +1,17 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<h1><f:translate key="tx_webmodelimport_header"/></h1>
+
+<i><f:translate key="tx_webmodelimport_import_message_file"/> {settings.allowedFileTypes}</i>
+
+<br/>
+<br/>
+
+<f:form method="post" action="upload" enctype="multipart/form-data">  
+	<f:form.upload name="import_file" />
+	<f:form.submit value="{f:translate(key:'tx_webmodelimport_submit')}"/>
+</f:form>
+
+</f:section>

@@ -3,7 +3,7 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2013 
+ *  (c) 2013 Philipp Buss <buss@typo3-hamburg-berlin.de>, Typo3 Hamburg Berlin.
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is

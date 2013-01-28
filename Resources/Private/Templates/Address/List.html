@@ -1,0 +1,49 @@
+<f:layout name="Default" />
+
+
+<f:section name="main">
+<h1><f:translate key="tx_webmodelimport_frontend_addresses"/></h1>
+
+<f:flashMessages />
+
+<f:if condition="{selectedZipcodeType}">
+	<f:translate key="tx_webmodelimport_frontend_setfilter"/> {selectedZipcodeType}
+	<br/>
+	<br/>
+</f:if>
+
+
+<f:form action="list">
+	<select	name="tx_webmodelimport_address[zipcodeType]">	
+		<f:for each="{zipcodeTypes}" as="zipcodeType">
+			<option value="{zipcodeType.label}">{zipcodeType.label}</option>
+		</f:for>
+	</select>
+	<f:form.submit value="{f:translate(key: 'tx_webmodelimport_frontend_filter')}"/>
+</f:form>
+
+<f:form action="list">
+	<f:form.submit value="{f:translate(key: 'tx_webmodelimport_frontend_showall')}"/>
+</f:form>	
+
+
+<table class="tx_webmodelimport" border="1" >
+	<tr>
+		<th><f:translate key="tx_webmodelimport_domain_model_address.name" /></th>
+		<th><f:translate key="tx_webmodelimport_domain_model_address.street" /></th>
+		<th><f:translate key="tx_webmodelimport_domain_model_address.zipcode" /></th>
+		<th><f:translate key="tx_webmodelimport_domain_model_address.city" /></th>
+	</tr>
+
+	<f:for each="{addresses}" as="address">
+		<tr>
+			<td><f:link.action action="show" arguments="{address : address}"> {address.name}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{address : address}"> {address.street}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{address : address}"> {address.zipcode}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{address : address}"> {address.city}</f:link.action></td>
+
+		</tr>
+	</f:for>
+</table>
+
+</f:section>
