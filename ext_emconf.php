@@ -1,7 +1,4 @@
 <?php
-
-echo 'test';
-
 ########################################################################
 # Extension Manager/Repository config file for ext: "web_model_import"
 #
